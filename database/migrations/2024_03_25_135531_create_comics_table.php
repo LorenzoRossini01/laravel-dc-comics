@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title', 50);
             $table->text('description')->nullable();
             $table->string('image')->nullable();
-            $table->smallInteger('price')->decimal(10,2);
+            $table->tinyText('price');
             $table->string('series',50);
             $table->date('sale_date');
             $table->timestamps();
