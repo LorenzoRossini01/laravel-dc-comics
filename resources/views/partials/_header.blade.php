@@ -15,7 +15,7 @@
                 <nav class="d-flex gap-3 align-items-center " >
                     <ul class="d-flex gap-3">
                         <li><a @class(["active"=> Route::currentRouteName()=='characters']) href="{{route('characters')}}">characters</a></li>
-                        <li><a @class(["active"=> Route::currentRouteName()=='comics']) href="{{route('comics')}}">comics</a></li>
+                        <li><a @class(["active"=> Route::currentRouteName()=='comics.index']) href="{{route('comics.index')}}">comics</a></li>
                         <li><a @class(["active"=> Route::currentRouteName()=='movies']) href="{{route('movies')}}">movies</a></li>
                         <li><a @class(["active"=> Route::currentRouteName()=='tv']) href="{{route('tv')}}">tv</a></li>
                         <li><a @class(["active"=> Route::currentRouteName()=='games']) href="{{route('games')}}">games</a></li>
