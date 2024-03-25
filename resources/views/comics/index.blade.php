@@ -15,7 +15,7 @@
                 <div class="card">
                     <a href="{{route('comics.show', $comic)}}">
                         <div class="card-img">
-                            <img src="{{$comic['thumb']}}" alt="">
+                            <img src="{{$comic['image']}}" alt="">
                         </div>
                         <div class="card-title">{{$comic['series']}}</div>
                     </a>
@@ -23,7 +23,8 @@
             </div>
             @endforeach
         </div>
-        <div class="btn btn-primary">load more</div>
+        <!-- <div class="btn btn-primary">load more</div> -->
+        {{$comics->links()}}
     </div>
 </main>
 

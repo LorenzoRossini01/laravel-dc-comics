@@ -20,11 +20,11 @@ class ComicSeeder extends Seeder
         for($i=0;$i<50;$i++){
 
             $comic=new Comic();
-            $comic->title=$faker->title();
+            $comic->title=$faker->userName();
             $comic->description=$faker->paragraph();
             $comic->image=$faker->imageUrl(640, 480, 'comic', true);
             $comic->price=$faker->randomFloat(2,10,50);
-            $comic->series=$faker->title();
+            $comic->series=$faker->userName();
             $comic->sale_date=$faker->date();
             $comic->save();
         }
