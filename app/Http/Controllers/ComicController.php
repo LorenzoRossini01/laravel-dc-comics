@@ -39,6 +39,8 @@ class ComicController extends Controller
         $data= $request->all();
         $comic=new Comic();
         $comic->fill( $data );
+        $price='$'.$data['price'];
+        $comic->price = $price;
         $comic->save();
         return redirect()->route('comics.show', $comic);
     }
