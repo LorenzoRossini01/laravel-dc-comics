@@ -13,7 +13,7 @@
             @foreach($comics as $index => $comic)
             <div class="col-6 col-md-4 col-lg-2">
                 <div class="card">
-                    <a href="{{route('comicDetails', ['index'=>$index, 'title' => $comic['title']])}}">
+                    <a href="{{route('comics.show', $comic)}}">
                         <div class="card-img">
                             <img src="{{$comic['thumb']}}" alt="">
                         </div>
