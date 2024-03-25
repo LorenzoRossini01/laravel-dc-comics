@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="thumb-container">
 
-                    <img src="{{$comic['thumb']}}" alt="" class="img-fluid">
+                    <img src="{{$comic['image']}}" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
