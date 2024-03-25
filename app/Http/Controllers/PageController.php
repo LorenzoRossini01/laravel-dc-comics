@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comic;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -19,22 +20,6 @@ class PageController extends Controller
 
     }
 
-    // #comics page 
-    public function comics(){
-        $comics=config('comics');
-        return view('pages.comics', compact('comics'));
-    }
-
-    // #comic details page 
-    public function comicDetails($index, $title){
-        $comics=config('comics');
-
-        if(!array_key_exists($index,$comics))abort(404,'chiave non trovata');
-
-        $comic=$comics[$index];
-        $title=$comic['title'];
-        return view('pages.comicDetails', compact('comic'));
-    }
 
     // #movies page 
 
