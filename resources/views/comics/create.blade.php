@@ -17,7 +17,7 @@
         </div>
         <div class="col-6">
             <label for="price" class="form-label">Price</label>
-            <input type="number" name="price" id="price" class="form-control">
+            <input type="number" name="price" id="price" step=".01" class="form-control">
         </div>
         <div class="col-6">
             <label for="series" class="form-label">Series</label>
