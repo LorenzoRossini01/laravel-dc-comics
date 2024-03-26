@@ -29,7 +29,7 @@
         </div>
         <div class="col-12">
             <label for="description" class="form-label">Description</label>
-            <textarea type="text" name="description" id="description" class="form-control"></textarea>
+            <textarea type="text" name="description" id="description" class="form-control" rows="5"></textarea>
         </div>
         <button class="btn btn-warning">Submit comic</button>
     </form>
