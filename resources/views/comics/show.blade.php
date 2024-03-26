@@ -75,5 +75,15 @@
             </div>
             </div>
         </div>
+
+        <div class="dropup">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item bg-warning text-white" href="{{route('comics.edit', $comic)}}"><i class="fa-solid fa-pencil"></i></a></li>
+                <li><a class="dropdown-item bg-danger text-white" href="#"><i class="fa-solid fa-trash"></i></a></li>
+            </ul>
+        </div>
 </main>
 @endsection
