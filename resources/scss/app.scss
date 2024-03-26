@@ -81,6 +81,8 @@ header {
         }
     }
     .header-bottom {
+        position: relative;
+
         .jumbo {
             height: 450px;
             background-image: url("../images/jumbotron.jpg");
@@ -89,6 +91,15 @@ header {
             background-size: cover;
             background-attachment: scroll;
         }
+    }
+
+    .alert {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        box-shadow: 9px 10px 50px 0px rgba(0, 0, 0, 0.498);
     }
 }
 

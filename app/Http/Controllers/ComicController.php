@@ -42,7 +42,10 @@ class ComicController extends Controller
         $price='$'.$data['price'];
         $comic->price = $price;
         $comic->save();
-        return redirect()->route('comics.show', $comic);
+        return redirect()
+        ->route('comics.show', $comic)
+        ->with('message','Nuovo fumetto salvato con successo')
+        ->with('class','alert-success');;
     }
 
     /**
@@ -78,7 +81,10 @@ class ComicController extends Controller
     {
         $data= $request->all();
         $comic->update($data);
-        return redirect()->route('comics.show', $comic);
+        return redirect()
+        ->route('comics.show', $comic)
+        ->with('message','Modifica effettuata con successo')
+        ->with('class','alert-success');
     }
 
     /**
@@ -90,6 +96,9 @@ class ComicController extends Controller
     public function destroy(Comic $comic)
     {
         $comic->delete();
-        return redirect()->route('comics.index');
+        return redirect()
+        ->route('comics.index')
+        ->with('message','Fumetto eliminato con successo')
+        ->with('class','alert-success');;
     }
 }

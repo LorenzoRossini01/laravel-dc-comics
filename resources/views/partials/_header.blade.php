@@ -37,9 +37,21 @@
                 </nav>
             </div>
     </div>
+
         <div class="header-bottom">
             <div class='jumbo'>
                 <!-- <img src="{{Vite::asset('/resources\images\jumbotron.jpg')}}" alt=""> -->
             </div>
+        <!-- @if(session('message')) -->
+        <div class="container">
+            <section>
+                <div class="alert {{session('class')}} alert-dismissible fade show" role="alert">
+                    {{session('message')}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </section>
         </div>
+        <!-- @endif -->
+        </div>
+
 </header>
